@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-config
+  namespace: monitoring
+data:
+  grafana.ini: |
+    [server]
+    # Grafana will listen on port 3000
+    http_port = 3000
+
+    [auth.anonymous]
+    # Allow anonymous access
+    enabled = true
+    org_role = Viewer
+
+    [auth.basic]
+    # Enable basic authentication
+    enabled = true
