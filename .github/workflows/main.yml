@@ -1,6 +1,5 @@
 name: Deploy Monitoring Stack
 
-
 on:
   push:
     branches:
